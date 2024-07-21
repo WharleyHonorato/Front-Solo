@@ -96,7 +96,7 @@ export default function Produtos() {
         <div className="flex flex-wrap w-[1200px] mt-[30px]">
           <div className="flex flex-wrap gap-11">
             {produto.map((produto) => (
-              <div className="text-center w-[350px] border-2 border-black font-inter bg-slate-100 h-[350px] rounded-xl flex items-center justify-between flex-col p-2">
+              <div className="text-center w-[350px] border-2 border-black font-inter bg-slate-100 h-[500px] rounded-xl flex items-center justify-between flex-col p-2">
                 <div className="flex w-full ">
                   <div className="flex justify-center items-center w-[96px] h-[32px] rounded-full bg-[#E7FF86]">
                     <p className="font-bold">30% OFF</p>
@@ -115,6 +115,7 @@ export default function Produtos() {
                   </p>
                   <p className="font-bold">R$ {produto.preco_desconto}</p>
                 </div>
+                <button className="w-[150px] h-[48px] bg-[#C92071] text-[#F5F5F5] rounded-xl font-bold">Comprar</button>
               </div>
             ))}
           </div>
