@@ -1,13 +1,6 @@
-import logo from "./logo.png";
-
 export default function Login() {
   return (
-    <div className="font-inter w-full h-full flex flex-col p-11 gap-11">
-      <div className="w-full items-center flex justify-between">
-        <div className="flex">
-          <img src={logo} alt="" />
-        </div>
-      </div>
-    </div>
+    <>
+    </>
   );
 }
