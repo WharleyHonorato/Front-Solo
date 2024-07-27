@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import NavBar from "../../components/NavBar";
+import Footer from "../../components/Footer";
 
 export default function Produtos() {
   const [produto, setProduto] = useState([]);
@@ -11,6 +13,8 @@ export default function Produtos() {
   }, []);
 
   return (
+    <>
+    <NavBar/>
     <div className="w-full h-full flex flex-col gap-5 p-11 font-inter">
       <div className="w-full flex items-center justify-between">
         <p>
@@ -122,5 +126,7 @@ export default function Produtos() {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }

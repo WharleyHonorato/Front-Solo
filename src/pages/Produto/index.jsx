@@ -1,11 +1,24 @@
 import img1 from "./White-Sneakers.png";
-import img2 from "./ShoesSell.png";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { TiStarHalfOutline, TiStarFullOutline } from "react-icons/ti";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { useEffect, useState } from "react";
+import NavBar from "../../components/NavBar";
+import Footer from "../../components/Footer";
 
 export default function Produto() {
+  const [produto, setProduto] = useState([]);
+
+  useEffect(() => {
+    fetch(`https://api-store-do1w.onrender.com/shoes`)
+      .then((response) => response.json())
+      .then((data) => setProduto(data.slice(0, 4)));
+  }, []);
+
+
   return (
+    <>
+    <NavBar/>
     <div className="w-full flex flex-col items-center font-inter">
       <div className="w-full p-11 mt-[-50px]">
         <p className="text-black">
@@ -73,28 +86,28 @@ export default function Produto() {
           <div className="flex flex-col gap-5">
             <p className="text-[14px] text-black font-bold">Tamanho</p>
             <div className="flex gap-4">
-              <div className="w-[50px] h-[50px] border-2 rounded-full font-bold border-black flex justify-center items-center">
+              <button className="w-[50px] h-[50px] border-2 rounded-full font-bold border-black flex justify-center items-center hover:bg-[#C92071] hover:text-white hover:border-none">
                 39
-              </div>
-              <div className="w-[50px] h-[50px] border-2 rounded-full font-bold border-black flex justify-center items-center">
+              </button>
+              <button className="w-[50px] h-[50px] border-2 rounded-full font-bold border-black flex justify-center items-center hover:bg-[#C92071] hover:text-white hover:border-none">
                 40
-              </div>
-              <div className="w-[50px] h-[50px] border-2 rounded-full font-bold border-black flex justify-center items-center bg-[#C92071] text-white">
+              </button>
+              <button className="w-[50px] h-[50px] border-2 rounded-full font-bold border-black flex justify-center items-center hover:bg-[#C92071] hover:text-white hover:border-none">
                 41
-              </div>
-              <div className="w-[50px] h-[50px] border-2 rounded-full font-bold border-black flex justify-center items-center">
+              </button>
+              <button className="w-[50px] h-[50px] border-2 rounded-full font-bold border-black flex justify-center items-center hover:bg-[#C92071] hover:text-white hover:border-none">
                 42
-              </div>
-              <div className="w-[50px] h-[50px] border-2 rounded-full font-bold border-black flex justify-center items-center">
+              </button>
+              <button className="w-[50px] h-[50px] border-2 rounded-full font-bold border-black flex justify-center items-center hover:bg-[#C92071] hover:text-white hover:border-none">
                 43
-              </div>
+              </button>
             </div>
             <p className="text-[14px] text-black font-bold">Cores</p>
             <div className="flex gap-4">
-              <div className="w-[40px] h-[40px] rounded-full bg-[#6FEEFF]"></div>
-              <div className="w-[40px] h-[40px] rounded-full bg-[#FF6969] border-2 border-black"></div>
-              <div className="w-[40px] h-[40px] rounded-full bg-[#5E5E5E]"></div>
-              <div className="w-[40px] h-[40px] rounded-full bg-[#6D70B7]"></div>
+              <button className="w-[40px] h-[40px] rounded-full bg-[#6FEEFF] hover:bg-[#6FEEFF] hover: border-black hover:border-2"></button>
+              <button className="w-[40px] h-[40px] rounded-full bg-[#FF6969] hover:bg-[#FF6969] hover: border-black hover:border-2"></button>
+              <button className="w-[40px] h-[40px] rounded-full bg-[#5E5E5E] hover:bg-[#5E5E5E] hover: border-black hover:border-2"></button>
+              <button className="w-[40px] h-[40px] rounded-full bg-[#6D70B7] hover:bg-[#6D70B7] hover: border-black hover:border-2"></button>
             </div>
             <div className="">
               <button className="w-[220px] h-[50px] font-bold text-white bg-[#FFB31F] rounded-xl">
@@ -114,65 +127,28 @@ export default function Produto() {
         </div>
       </div>
       <div className="flex mb-[100px] flex-wrap gap-[70px]">
-        <div className="w-[292px] font-inter bg-slate-200 h-[400px] rounded-xl flex justify-center flex-col p-2">
-          <div className="flex justify-center items-center w-[96px] h-[32px] rounded-full bg-[#E7FF86]">
-            <p className="font-bold">30% OFF</p>
-          </div>
-          <div className="flex items-center h-full">
-            <img className="w-[250px]" src={img2} alt="" />
-          </div>
-          <div className="flex flex-col gap-2">
-            <p className="text-xs">Tênis</p>
-            <p className="text-[24px]">K-Swiss V8 - Masculino</p>
-            <div className="flex gap-2 items-center">
-              <p className="line-through text-[#8F8F8F]">R$ 200</p>
-              <p className="text-[#1F1F1F] font-bold text-[20px]">R$ 100</p>
+        {produto.map((produto) => (
+          <div className="w-[300px] font-inter bg-slate-200 h-[450px] rounded-xl flex justify-center flex-col p-2">
+            <div className="flex justify-center items-center w-[96px] h-[32px] rounded-full bg-[#E7FF86]">
+              <p className="font-bold">30% OFF</p>
             </div>
-          </div>
-        </div>
-        <div className="w-[292px] font-inter bg-slate-200 h-[400px] rounded-xl flex justify-center flex-col p-2">
-          <div className="flex justify-center items-center w-[96px] h-[32px] rounded-full bg-[#E7FF86]">
-            <p className="font-bold">30% OFF</p>
-          </div>
-          <div className="flex items-center h-full">
-            <img className="w-[250px]" src={img2} alt="" />
-          </div>
-          <div className="flex flex-col gap-2">
-            <p className="text-xs">Tênis</p>
-            <p className="text-[24px]">K-Swiss V8 - Masculino</p>
-            <div className="flex gap-2 items-center">
-              <p className="line-through text-[#8F8F8F]">R$ 200</p>
-              <p className="text-[#1F1F1F] font-bold text-[20px]">R$ 100</p>
+            <div className="flex items-center h-full">
+              <img className="w-[250px]" src={produto.imagem_url} alt="" />
             </div>
-          </div>
-        </div>
-        <div className="w-[292px] font-inter bg-slate-200 h-[400px] rounded-xl flex justify-center flex-col p-2">
-          <div className="flex items-center h-full">
-            <img className="w-[250px]" src={img2} alt="" />
-          </div>
-          <div className="flex flex-col gap-2">
-            <p className="text-xs">Tênis</p>
-            <p className="text-[24px]">K-Swiss V8 - Masculino</p>
-            <div className="flex gap-2 items-center">
-              <p className="line-through text-[#8F8F8F]">R$ 200</p>
-              <p className="text-[#1F1F1F] font-bold text-[20px]">R$ 100</p>
+            <div className="flex flex-col gap-2">
+              <p className="text-xs">Tênis</p>
+              <p className="text-[24px]">{produto.nome}</p>
+              <div className="flex gap-2 items-center">
+                <p className="line-through text-[#8F8F8F]">R$ {produto.preco_original}</p>
+                <p className="text-[#1F1F1F] font-bold text-[20px]">R$ {produto.preco_desconto}</p>
+              </div>
             </div>
+
           </div>
-        </div>
-        <div className="w-[292px] font-inter bg-slate-200 h-[400px] rounded-xl flex justify-center flex-col p-2">
-          <div className="flex items-center h-full">
-            <img className="w-[250px]" src={img2} alt="" />
-          </div>
-          <div className="flex flex-col gap-2">
-            <p className="text-xs">Tênis</p>
-            <p className="text-[24px]">K-Swiss V8 - Masculino</p>
-            <div className="flex gap-2 items-center">
-              <p className="line-through text-[#8F8F8F]">R$ 200</p>
-              <p className="text-[#1F1F1F] font-bold text-[20px]">R$ 100</p>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
