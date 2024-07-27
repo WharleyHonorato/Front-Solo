@@ -23,9 +23,9 @@ export default function Home() {
   }, []);
 
   return (
-    <>
+    <div className="">
     <NavBar/>
-      <div className="font-inter w-full h-full flex justify-center items-center">
+      <div className="font-inter w-full h-full flex justify-center items-center"> 
         <div className="w-1/2 flex flex-col justify-center items-center">
           <div className="w-[512px] h-[352px] flex flex-col justify-between">
             <p className="text-[#F6AA1C] text-[14px] font-bold">
@@ -146,7 +146,7 @@ export default function Home() {
           <FaArrowRightLong color="#C92071" />
         </div>
       </div>
-      <div className="mt-[20px] ml-[265px] flex flex-wrap gap-[70px]">
+      <div className="mt-[20px] ml-[260px] flex flex-wrap gap-[70px]">
         {produto.map((produto) => (
           <div className="w-[300px] font-inter bg-slate-200 h-[500px] rounded-xl flex justify-center flex-col p-2">
             <div className="flex justify-center items-center w-[96px] h-[32px] rounded-full bg-[#E7FF86]">
@@ -192,6 +192,6 @@ export default function Home() {
         </div>
       </div>
       <Footer/>
-    </>
+    </div>
   );
 }

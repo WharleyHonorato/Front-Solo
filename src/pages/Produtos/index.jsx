@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
+import { Link } from "react-router-dom";
 
 export default function Produtos() {
   const [produto, setProduto] = useState([]);
@@ -119,7 +120,9 @@ export default function Produtos() {
                   </p>
                   <p className="font-bold">R$ {produto.preco_desconto}</p>
                 </div>
+                <Link to="/produto">
                 <button className="w-[150px] h-[48px] bg-[#C92071] text-[#F5F5F5] rounded-xl font-bold">Comprar</button>
+                </Link>
               </div>
             ))}
           </div>

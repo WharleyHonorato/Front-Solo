@@ -132,7 +132,7 @@ export default function Produto() {
             <div className="flex justify-center items-center w-[96px] h-[32px] rounded-full bg-[#E7FF86]">
               <p className="font-bold">30% OFF</p>
             </div>
-            <div className="flex items-center h-full">
+            <div className="flex justify-center items-center h-full">
               <img className="w-[250px]" src={produto.imagem_url} alt="" />
             </div>
             <div className="flex flex-col gap-2">
