@@ -3,7 +3,7 @@ import shirt from "./Shirt.png";
 import shoes from "./Shoes.png";
 import fone from "./Fone.png";
 import camisa from "./camisa.png";
-import bone from "./bone.png"
+import bone from "./bone.png";
 import calca from "./calca.png";
 import headphone from "./headphone.png";
 import sneakers from "./sneakers.png";
@@ -23,9 +23,9 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="">
-    <NavBar/>
-      <div className="font-inter w-full h-full flex justify-center items-center"> 
+    <>
+      <NavBar />
+      <div className="font-inter w-full h-full flex justify-center items-center">
         <div className="w-1/2 flex flex-col justify-center items-center">
           <div className="w-[512px] h-[352px] flex flex-col justify-between">
             <p className="text-[#F6AA1C] text-[14px] font-bold">
@@ -159,13 +159,16 @@ export default function Home() {
               <p className="text-xs">Tênis</p>
               <p className="text-[24px]">{produto.nome}</p>
               <div className="flex gap-2 items-center">
-                <p className="line-through text-[#8F8F8F]">R$ {produto.preco_original}</p>
-                <p className="text-[#1F1F1F] font-bold text-[20px]">R$ {produto.preco_desconto}</p>
+                <p className="line-through text-[#8F8F8F]">
+                  R$ {produto.preco_original}
+                </p>
+                <p className="text-[#1F1F1F] font-bold text-[20px]">
+                  R$ {produto.preco_desconto}
+                </p>
               </div>
             </div>
           </div>
-        )
-        )}
+        ))}
       </div>
       <div className="w-full h-full flex mt-[80px] p-11 ml-[150px] font-inter justify-evenly gap-[50px] items-center">
         <div className="flex items-center justify-center bg-gradient-to-b from-[#E9E1FF] from-25% to-[#FFFFFF] w-[466px] h-[466px] rounded-full bg-black">
@@ -191,7 +194,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Footer/>
-    </div>
+      <Footer />
+    </>
   );
 }

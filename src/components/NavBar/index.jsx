@@ -22,19 +22,40 @@ export default function NavBar() {
         </div>
         <div className=" flex justify-between">
           <div className="flex gap-11 items-center">
-            <NavLink className="hover:underline underline-offset-4 hover:text-[#C92071] hover:font-bold">Cadastre-se</NavLink>
-            <button className="w-[110px] h-[40px] text-[14px] font-bold font-inter bg-[#C92071] text-white rounded-xl">
-              Entrar
-            </button>
+            <NavLink
+              to="/cadastro"
+              className="hover:underline underline-offset-4 hover:text-[#C92071] hover:font-bold hover:text-lg"
+            >
+              Cadastre-se
+            </NavLink>
+            <NavLink to="/login">
+              <button className="w-[110px] h-[40px] text-[14px] font-bold font-inter bg-[#C92071] text-white rounded-xl">
+                Entrar
+              </button>
+            </NavLink>
             <IoCart color="#C92071" size={30} />
           </div>
         </div>
       </div>
       <div className="flex gap-10">
-        <NavLink className="hover:underline underline-offset-4 hover:text-[#C92071] hover:font-bold" to="/">Home</NavLink>
-        <NavLink className="hover:underline underline-offset-4 hover:text-[#C92071] hover:font-bold" to="/produtos">Produtos</NavLink>
-        <NavLink className="hover:underline underline-offset-4 hover:text-[#C92071] hover:font-bold">Categorias</NavLink>
-        <NavLink className="hover:underline underline-offset-4 hover:text-[#C92071] hover:font-bold">Meus Pedidos</NavLink>
+        <NavLink
+          className="hover:underline underline-offset-4 hover:text-[#C92071] hover:font-bold hover:text-xl"
+          to="/"
+        >
+          Home
+        </NavLink>
+        <NavLink
+          className="hover:underline underline-offset-4 hover:text-[#C92071] hover:font-bold hover:text-xl"
+          to="/produtos"
+        >
+          Produtos
+        </NavLink>
+        <NavLink className="hover:underline underline-offset-4 hover:text-[#C92071] hover:font-bold hover:text-xl">
+          Categorias
+        </NavLink>
+        <NavLink className="hover:underline underline-offset-4 hover:text-[#C92071] hover:font-bold hover:text-xl">
+          Meus Pedidos
+        </NavLink>
       </div>
     </div>
   );
