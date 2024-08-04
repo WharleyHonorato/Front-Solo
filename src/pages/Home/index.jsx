@@ -108,34 +108,34 @@ export default function Home() {
         </div>
         <div className="w-1/2 flex justify-evenly items-center">
           <div className="flex flex-col gap-2 items-center">
-            <div className="flex justify-center items-center w-[80px] h-[80px] rounded-full bg-white">
+            <button className="flex flex-col gap-7 justify-center items-center w-[140px] h-[140px] rounded-full bg-white hover:bg-[#C92071] hover:text-white hover:border-none">
               <img className="w-[60px]" src={camisa} alt="" />
-            </div>
-            <p className="text-[16px] font-bold">Camisetas</p>
+              <p className="text-[14px] font-bold">Camisetas</p>
+            </button>
           </div>
           <div className="flex flex-col gap-2 items-center">
-            <div className="flex justify-center items-center w-[80px] h-[80px] rounded-full bg-white">
+            <button className="flex flex-col gap-7 justify-center items-center w-[140px] h-[140px] rounded-full bg-white hover:bg-[#C92071] hover:text-white hover:border-none">
               <img className="w-[60px]" src={calca} alt="" />
-            </div>
-            <p className="text-[16px] font-bold">Calças</p>
+              <p className="text-[14px] font-bold">Calças</p>
+            </button>
           </div>
           <div className="flex flex-col gap-2 items-center">
-            <div className="flex justify-center items-center w-[80px] h-[80px] rounded-full bg-white">
+            <button className="flex flex-col gap-7 justify-center items-center w-[140px] h-[140px] rounded-full bg-white hover:bg-[#C92071] hover:text-white hover:border-none">
               <img className="w-[70px]" src={bone} color="" alt="" />
-            </div>
-            <p className="text-[16px] font-bold">Bonés</p>
+              <p className="text-[14px] font-bold">Bonés</p>
+            </button>
           </div>
           <div className="flex flex-col gap-2 items-center">
-            <div className="flex justify-center items-center w-[80px] h-[80px] rounded-full bg-white">
+            <button className="flex flex-col gap-7 justify-center items-center w-[140px] h-[140px] rounded-full bg-white hover:bg-[#C92071] hover:text-white hover:border-none">
               <img className="w-[60px]" src={headphone} alt="" />
-            </div>
-            <p className="text-[16px] font-bold">Headphones</p>
+              <p className="text-[14px] font-bold">Headphones</p>
+            </button>
           </div>
           <div className="flex flex-col gap-2 items-center">
-            <div className="flex justify-center items-center w-[80px] h-[80px] rounded-full bg-white">
+            <button className="flex flex-col gap-7 justify-center items-center w-[140px] h-[140px] rounded-full bg-white hover:bg-[#C92071] hover:text-white hover:border-none">
               <img className="w-[60px]" src={sneakers} alt="" />
-            </div>
-            <p className="text-[16px] font-bold">Tênis</p>
+              <p className="text-[14px] font-bold">Tênis</p>
+            </button>
           </div>
         </div>
       </div>
