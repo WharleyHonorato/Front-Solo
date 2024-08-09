@@ -12,7 +12,11 @@ export default function Produto() {
   useEffect(() => {
     fetch(`https://api-store-do1w.onrender.com/shoes`)
       .then((response) => response.json())
-      .then((data) => setProduto(data.slice(0, 4)));
+      .then((data) => setProduto(data.slice(5, 9)));
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
   }, []);
 
 
@@ -22,8 +26,7 @@ export default function Produto() {
     <div className="w-full flex flex-col items-center font-inter">
       <div className="w-full p-11 mt-[-50px]">
         <p className="text-black">
-          Home / Produtos / Tênis / Nike / Tênis Nike Revolution 6 Next Nature
-          Masculino
+          Home / Produtos / Tênis / Nike / Tênis Hoka One One Clifton 8
         </p>
       </div>
       <div className="w-full flex p-11 gap-[100px] justify-center">
@@ -54,7 +57,7 @@ export default function Produto() {
         <div className="w-[700px] h-[400px] flex flex-col gap-5">
           <div className="flex flex-col gap-3">
             <p className="text-[36px] font-bold">
-              Tênis Nike Revolution 6 Next Nature Masculino
+              Tênis Hoka One One Clifton 8
             </p>
             <p className="text-xs font-bold">Casual | Nike | REF:38416711</p>
             <div className="flex items-center">
@@ -71,8 +74,8 @@ export default function Produto() {
             </div>
             <div className="flex gap-2 items-center">
               <p>R$ </p>
-              <p className="text-[32px] font-bold"> 219,00 </p>
-              <p className="line-through text-[#CCCCCC]">250,00</p>
+              <p className="text-[32px] font-bold"> 585,00 </p>
+              <p className="line-through text-[#CCCCCC]">650,00</p>
             </div>
             <p className="text-[14px] text-black font-bold">
               Descrição do Produto

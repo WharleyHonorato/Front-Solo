@@ -170,26 +170,28 @@ export default function Home() {
           </div>
         ))}
       </div>
-      <div className="w-full h-full flex mt-[80px] p-11 ml-[150px] font-inter justify-evenly gap-[50px] items-center">
-        <div className="flex items-center justify-center bg-gradient-to-b from-[#E9E1FF] from-25% to-[#FFFFFF] w-[466px] h-[466px] rounded-full bg-black">
-          <img className="absolute" src={imgGrande} alt="" />
-        </div>
-        <div className="w-1/2">
-          <div className="w-[550px] h-[341px] flex flex-col justify-between">
-            <p className="text-[#C92071] font-bold">Oferta especial</p>
-            <p className="text-[48px] font-bold leading-none">
-              Air Jordan edição de colecionador
-            </p>
-            <p className="text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip
-            </p>
-            <div className="flex justify-start">
-              <button className="w-[200px] h-[40px] bg-[#C92071] rounded-xl text-white font-bold">
-                Ver Oferta
-              </button>
+      <div className="w-full h-full flex mt-[50px] p-11 font-inter justify-center items-center">
+        <div className="flex justify-center items-center gap-[100px]">
+          <div className="flex items-center justify-center bg-gradient-to-b from-[#E9E1FF] from-25% to-[#FFFFFF] w-[466px] h-[466px] rounded-full bg-black">
+            <img className="absolute" src={imgGrande} alt="" />
+          </div>
+          <div className="w-1/2">
+            <div className="w-[550px] h-[341px] flex flex-col justify-between">
+              <p className="text-[#C92071] font-bold">Oferta especial</p>
+              <p className="text-[48px] font-bold leading-none">
+                Air Jordan edição de colecionador
+              </p>
+              <p className="text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip
+              </p>
+              <div className="flex justify-start">
+                <button className="w-[200px] h-[40px] bg-[#C92071] rounded-xl text-white font-bold">
+                  Ver Oferta
+                </button>
+              </div>
             </div>
           </div>
         </div>
