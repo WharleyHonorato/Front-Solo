@@ -1,6 +1,5 @@
 import Footer from "../../components/Footer";
 import { FaFacebook } from "react-icons/fa6";
-import { SiGmail } from "react-icons/si";
 import sapato from "./pexels-1.png";
 import sapato2 from "./pexels-2.png";
 import NavBar2 from "../../components/NavBar-2";
@@ -26,7 +25,9 @@ export default function Cadastro() {
               />
             </div>
             <div className="flex flex-col gap-5">
+              <Link to={"/cadastro/info"}>
               <button className="w-[523px] h-[48px] bg-[#C92071] rounded-md text-white font-bold">Criar Conta</button>
+              </Link>
             </div>
             <div className="flex justify-center items-center gap-3">
               <p className="text-[#474747]">Ou faça login com</p>

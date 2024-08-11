@@ -1,6 +1,5 @@
 import Footer from "../../components/Footer";
 import { FaFacebook } from "react-icons/fa6";
-import { SiGmail } from "react-icons/si";
 import sapato from "./pexels-1.png";
 import sapato2 from "./pexels-2.png";
 import NavBar2 from "../../components/NavBar-2";
