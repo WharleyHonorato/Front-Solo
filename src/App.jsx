@@ -18,6 +18,7 @@ function App() {
         <Route path="/login" element={<Login/>}></Route>
         <Route path="/cadastro" element={<Cadastro/>}></Route>
         <Route path="/cadastrar" element={<CriarConta/>}></Route>
+        <Route path="/teste/:id" element={<ProdutoDetalhado/>}></Route>
         </Routes>
       </BrowserRouter>
   )
