@@ -14,10 +14,10 @@ function App() {
         <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/produtos" element={<Produtos/>}></Route>
-        <Route path="/produto" element={<Produto/>}></Route>
+        <Route path="/produto/14" element={<Produto/>}></Route>
         <Route path="/login" element={<Login/>}></Route>
         <Route path="/cadastro" element={<Cadastro/>}></Route>
-        <Route path="/cadastro/info" element={<CriarConta/>}></Route>
+        <Route path="/cadastrar" element={<CriarConta/>}></Route>
         </Routes>
       </BrowserRouter>
   )

@@ -25,7 +25,7 @@ export default function Cadastro() {
               />
             </div>
             <div className="flex flex-col gap-5">
-              <Link to={"/cadastro/info"}>
+              <Link to={"/cadastrar"}>
               <button className="w-[523px] h-[48px] bg-[#C92071] rounded-md text-white font-bold">Criar Conta</button>
               </Link>
             </div>

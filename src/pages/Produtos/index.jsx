@@ -120,7 +120,7 @@ export default function Produtos() {
                   </p>
                   <p className="font-bold">R$ {produto.preco_desconto}</p>
                 </div>
-                <Link to="/produto/">
+                <Link to="/produto/14">
                 <button className="w-[150px] h-[48px] bg-[#C92071] text-[#F5F5F5] rounded-xl font-bold">Comprar</button>
                 </Link>
               </div>
